@@ -1,0 +1,82 @@
+<html lang="en"
+<head>
+    <style>
+        :root{
+            --primary-color:#3498db;
+            --secondary-color:#2ecc71;
+            --accent-color:#74c3c;
+        }
+        body{
+            background-color:var(--primary-color);
+            color:white
+        }
+        a{
+            color:var(--accnt-color);
+        }
+        a{
+            color:blue;
+            text-decoration:none;
+
+            font-weight:bold;
+            transition: color 0.3s ease;
+        }
+        a:hover{
+            color:red;
+        }
+        a:active{
+            color:green;
+        }
+        a:visited{
+            color:purple;
+        }
+        button{
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: #2980b9;
+        }
+        button:active{
+            background-color: #154361;
+        }
+        button[name="reset"]{
+            background-color: #e74c3c;
+        }
+        button[name="reset"]hover{
+            background-color: #74231a;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Login Form</title>
+    
+</head>
+<body>
+    <form name="login"method="post"action="login.php">
+        <h1>LOGIN FORM</h1>
+        Name:<input type="text"
+        name="username"
+        value="enter your nname"/>
+        <br/>
+        password:<input type="password"
+        name="password"
+        value=""/>
+        <br/>
+        <button type="submit"name="submit"value=""></button>
+        ☁ LOGIN
+        </button>
+        <button type="reset"name="reset"></button>
+        <br/>
+        <a href="reset.html">Forgot Your password
+
+        </a>
+        
+    </form>
+</body>
+</html>
